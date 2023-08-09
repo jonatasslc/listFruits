@@ -1,11 +1,11 @@
-export default function Fruta({name, image, description, url}){
+export default function Fruta(fruits){
     
     return (
         <div className="cardFruit">
-            <h3 className="nameFruit">{name}</h3>
-            <img src={image} className="imgFruit"/>
-            <p className="descriptionFruit">{description}</p>
-            <a href={url} target="_blank"><button className="btnLink">Saiba mais!</button></a>
+            <h3 className="nameFruit">{fruits.name}</h3>
+            <img src={fruits.image} className="imgFruit"/>
+            <p className="descriptionFruit">{fruits.description}</p>
+            <a href={fruits.url} target="_blank"><button className="btnLink">Saiba mais!</button></a>
         </div>
     )
 }

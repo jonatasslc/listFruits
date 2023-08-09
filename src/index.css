@@ -18,8 +18,8 @@
   margin-left: 515px;
   box-shadow: -85px -71px 66px -19px rgba(255,0,0,0.15);
   border-radius: 7px;
-  max-width: 960px;
-  max-height: 1090px;
+  width: 960px;
+  height: 1090px;
 }
 
 .listFruits{
@@ -49,6 +49,7 @@
   width: 100%;
   text-align: center;
   color: rgb(104, 161, 161);
+  font-size: 15px;
 }
 
 .nameFruit{
