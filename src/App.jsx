@@ -1,13 +1,29 @@
 import Fruta from './components'
 import React, { useState, useEffect } from 'react';
-import { getFruits } from './../api/FruitsService';
+// import { getFruits } from './../api/FruitsService';
+import api from './services/api'; // aqui está importando os dados da api fake
 
 function App(){
   const[fruits, setFruits] = useState([]);
 
+  // usando a função do FruitsService:
+
+  // useEffect( () => {
+  //   setFruits(getFruits)
+  // },[])  
+
+// ---------------------------------------------------------------------------
+
+  // usando a api fake:
+
   useEffect( () => {
-    setFruits(getFruits)
-  },[])  
+    const url = '/fruits'; // criei uma const para acessar os dados da api
+        api.get(url) // indicando o que a get vai acessar, no caso a variavel criada acima
+      .then( (response) => {
+          setFruits(response.data) // adicionando informações através do setFruits 
+        })
+
+  },[]) 
 
   return (
     <>
@@ -22,10 +38,7 @@ function App(){
             fruits.map(fruit => {
               return ( <Fruta 
                 key={fruit.id}
-                name={fruit.name} 
-                image={fruit.image}
-                description={fruit.description}
-                url={fruit.url}
+                fruits={fruit}
                   /> )
             })
           }

@@ -1,4 +1,4 @@
-export default function Fruta(fruits){
+export default function Fruta({fruits}){
     
     return (
         <div className="cardFruit">
