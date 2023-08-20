@@ -1,0 +1,62 @@
+header{
+    margin-bottom: 50px;
+}
+
+.title{
+
+        color: rgb(114, 61, 61);
+        text-align: right;
+        font-weight: 8;
+        font-size: 29px;
+        letter-spacing: 7.5px;
+        height: 30px;
+        margin-left: 300px;
+      
+}
+
+.form{
+        margin-left: 515px;
+        box-shadow: -85px -71px 66px -19px rgba(255,0,0,0.15);
+        border-radius: 7px;
+        max-width: 960px;
+        height: 1090px;
+      }
+  
+  
+  .cardinfo{
+    width: 100%;
+    margin-left: 40px;
+    text-align: left;
+    color: rgb(114, 61, 61);
+    font-size: 20px;
+  }
+
+  .btn{
+    margin-left: 15px;
+    text-align: center;
+    width: 48%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #af4c4c;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #e3e3e3;
+  }
+
+  
+.btn:hover {
+    background-color: #8e3e3e
+  }
+  
+.btnactive {
+    background-color: #af4c4c;
+    box-shadow: 0 5px #e3e3e3;
+    transform: translateY(4px);
+  }

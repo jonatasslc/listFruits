@@ -1,0 +1,106 @@
+header{
+      margin-bottom: 50px;
+}
+.imgAdm{
+    width: 70px;
+    height: 70px;
+  }
+
+.nameAdm{
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.sectionFruitsAdm{
+    margin-left: 515px;
+    box-shadow: -85px -71px 66px -19px rgba(255,0,0,0.15);
+    border-radius: 7px;
+    max-width: 960px;
+    height: 1090px;
+  }
+  
+  .listFruitsAdm{
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cardAdm{
+    margin-top: 20px;
+    padding: 5px;
+    border-bottom: rgb(128, 0, 0) 2px solid;
+    display: flex;
+  }
+
+  .descriptionFruitAdm{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .btnEdit{
+    /* margin-left: 40px; */
+    /* margin-right: 50px; */
+    float: right;
+    width: 100px;
+    height: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: inline-block;
+    /* padding: 10px 20px; */
+    font-size: 11px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #af4c4c;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #e3e3e3;
+    margin-left: 20px;
+  }
+
+  
+.btnEdit:hover {
+    background-color: #8e3e3e
+  }
+  
+.btnEditactive {
+    background-color: #af4c4c;
+    box-shadow: 0 5px #e3e3e3;
+    transform: translateY(4px);
+  }
+
+  .btnDelete{
+    /* margin-left: 40px; */
+    /* margin-right: 50px; */
+    float: right;
+    width: 100px;
+    height: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: inline-block;
+    /* padding: 10px 20px; */
+    font-size: 11px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #af4c4c;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #e3e3e3;
+    margin-left: 20px;
+  }
+
+  
+.btnDelete:hover {
+    background-color: #8e3e3e
+  }
+  
+.btnDeleteactive {
+    background-color: #af4c4c;
+    box-shadow: 0 5px #e3e3e3;
+    transform: translateY(4px);
+  }

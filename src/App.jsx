@@ -1,55 +1,68 @@
-import Fruta from './components'
-import React, { useState, useEffect } from 'react';
-// import { getFruits } from './../api/FruitsService';
-import api from './services/api'; // aqui está importando os dados da api fake
+import React from 'react';
+import Root from './routes/Root'
 
-function App(){
-  const[fruits, setFruits] = useState([]);
-
-  // usando a função do FruitsService:
-
-  // useEffect( () => {
-  //   setFruits(getFruits)
-  // },[])  
-
-// ---------------------------------------------------------------------------
-
-  // usando a api fake:
-
-  useEffect( () => {
-    const url = '/fruits'; // criei uma const para acessar os dados da api
-        api.get(url) // indicando o que a get vai acessar, no caso a variavel criada acima
-      .then( (response) => {
-          setFruits(response.data) // adicionando informações através do setFruits 
-        })
-
-  },[]) 
-
+function App() {
   return (
-    <>
-      <header>
-        <h1 className='title'>Benefícios de incluir frutas na sua alimentação</h1>
-      </header>
-      <section className='sectionFruits'>
-        <div className='listFruits'>
-
-
-        {
-            fruits.map(fruit => {
-              return ( <Fruta 
-                key={fruit.id}
-                fruits={fruit}
-                  /> )
-            })
-          }
-
-        </div>
-      </section>
+    <>  
+    < Root />
     </>
   )
 }
 
 export default App
+
+// import Fruta from './components'
+// import React, { useState, useEffect } from 'react';
+// // import { getFruits } from './../api/FruitsService';
+// import api from './services/api'; // aqui está importando os dados da api fake
+
+// function App(){
+//   const[fruits, setFruits] = useState([]);
+
+//   // usando a função do FruitsService:
+
+//   // useEffect( () => {
+//   //   setFruits(getFruits)
+//   // },[])  
+
+// // ---------------------------------------------------------------------------
+
+//   // usando a api fake:
+
+//   useEffect( () => {
+//     const url = '/fruits'; // criei uma const para acessar os dados da api
+//         api.get(url) // indicando o que a get vai acessar, no caso a variavel criada acima
+//       .then( (response) => {
+//           setFruits(response.data) // adicionando informações através do setFruits 
+//         })
+
+//   },[]) 
+
+//   return (
+//     <>
+//       <header>
+//         <h1 className='title'>Benefícios de incluir frutas na sua alimentação</h1>
+//       </header>
+//       <section className='sectionFruits'>
+//         <div className='listFruits'>
+
+
+//         {
+//             fruits.map(fruit => {
+//               return ( <Fruta 
+//                 key={fruit.id}
+//                 fruits={fruit}
+//                   /> )
+//             })
+//           }
+
+//         </div>
+//       </section>
+//     </>
+//   )
+// }
+
+// export default App
 
 /* em branco:
 
