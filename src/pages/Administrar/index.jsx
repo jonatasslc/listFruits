@@ -2,6 +2,7 @@ import Fruit from '../../components/AdmFruits'
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import styles from './styles.css';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Administrar(){
     const[fruits, setFruits] = useState([]);
@@ -19,8 +20,8 @@ function Administrar(){
       <>
         <header>
           <h1 className='title'>Administre as informações</h1>
-          <button className='btnAdm'>Nova fruta</button>
-          <button className='btnAdm'>Inicio</button>
+          <Link to="/administrar/cadastrar" className='btnAdm'>Nova fruta</Link>
+          <Link to="/" className='btnAdm'>Inicio</Link>
         </header>
         <section className='sectionFruitsAdm'>
           <div className='listFruitsAdm'>

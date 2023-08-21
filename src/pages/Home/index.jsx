@@ -2,6 +2,9 @@ import Fruta from '../../components/HomeFruits'
 import React, { useState, useEffect } from 'react';
 // import { getFruits } from './../api/FruitsService';
 import api from '../../services/api'; // aqui está importando os dados da api fake
+import { useNavigate, Link } from 'react-router-dom';
+import styles from './styles.css';
+
 
 function Home(){
     const[fruits, setFruits] = useState([]);
@@ -45,7 +48,7 @@ function Home(){
         <header>
           
           <h1 className='title'>Benefícios de incluir frutas na sua alimentação</h1>
-          <button className='btnAdm'>Administrar</button>
+         <Link to="/administrar" className='btnAdm'>Administrar</Link>
         <input className='searchInput' type="search" placeholder='Buscar pelo nome' value={search} onChange={(ev) => setSearch(ev.target.value)}/>
         </header>
         <div className='searchDiv'>

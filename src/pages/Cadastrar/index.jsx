@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import api from '../../services/api';
-import { useNavigate } from 'react-router-dom';
-import styles from './styles.css';
+import { useNavigate, Link } from 'react-router-dom';
+import styles from './styles.css'
 
 const initialValue = {
-    title: '',
+    id: '',
+    name: '',
     image: '',
-    price: 0,
+    description: 0,
     url: '',
 };
 
@@ -37,19 +38,19 @@ function Cadastrar(){
         <>
         <header>
             <h1 className='title'>Cadastrar nova fruta</h1>
-            <button className='btnAdm'>Voltar</button>
+            <Link to="/administrar" className='btnAdm'>Voltar</Link>
             </header>
 
             <form onSubmit={onSubmit} className='form'>
                 <div className='cardinfo'>
                     <label htmlFor="name">Nome da fruta</label> <br></br>
-                    <input type="text" id="title" name="title" onChange={onChange}/> <br></br>
+                    <input type="text" id="name" name="name" onChange={onChange}/> <br></br>
                     <label htmlFor="url">Url com mais informações</label><br></br>
                     <input type="text" id="url" name="url" onChange={onChange}/> <br></br>
                     <label htmlFor="image">Url da imagem</label><br></br>
                     <input type="text" id="image" name="image" onChange={onChange}/> <br></br>
                     <label htmlFor="description">Descrição de benefícios</label><br></br>
-                    <textarea cols="30" rows="5" id="price" name="price" onChange={onChange}/> <br></br>
+                    <textarea cols="30" rows="5" id="description" name="description" onChange={onChange}/> <br></br>
                     <button className='btn' type="submit">Salvar</button>
                 </div>
             </form>  

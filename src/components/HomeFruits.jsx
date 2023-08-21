@@ -2,7 +2,6 @@ export default function HomeFruits({fruits}){
     
     return (
         <div className="cardFruit">
-            
             <h3 className="nameFruit">{fruits.name}</h3>
             <img src={fruits.image} className="imgFruit"/>
             <p className="descriptionFruit">{fruits.description}</p>

@@ -22,11 +22,11 @@
       "url": "https://www.livup.com.br/ingredientes/goiaba"
     },
     {
-      "title": "",
-      "image": "",
-      "price": 0,
-      "url": "",
-      "id": 4
+      "id": 7,
+      "name": "Jaca",
+      "image": "https://img.freepik.com/fotos-premium/jaca-com-isolado-no-fundo-branco_253984-5865.jpg",
+      "description": "Possui cálcio, potássio, ferro, fósforo e vitaminas A, B e C.",
+      "url": "https://www.livup.com.br/ingredientes/jaca"
     }
   ]
 }
