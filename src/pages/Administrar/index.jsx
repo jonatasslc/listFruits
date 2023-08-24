@@ -15,7 +15,7 @@ function Administrar(){
           })
   
     },[]) 
-  
+
     return (
       <>
         <header>
@@ -25,7 +25,6 @@ function Administrar(){
         </header>
         <section className='sectionFruitsAdm'>
           <div className='listFruitsAdm'>
-  
   
           {
               fruits.map(fruit => {
