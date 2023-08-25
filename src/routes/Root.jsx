@@ -11,7 +11,7 @@ const Root = () => {
             <Routes>
                 <Route path="/" element={ <Home /> } />
                 <Route path="/administrar" element={<Administrar/>} />
-                <Route path="/administrar/editar" element={<Editar/>} />
+                <Route path="/administrar/editar/:id" element={<Editar/>} />
                 <Route path="/administrar/cadastrar" element={ <Cadastrar /> } />
             </Routes>
         </Router>

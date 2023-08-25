@@ -12,7 +12,7 @@ const initialValue = {
 
 
 
-function Editar(){
+function Editar2(){
     //
     const [values, setValues] = useState(initialValue);
 
@@ -79,4 +79,4 @@ function Editar(){
     )
 }
 
-export default Editar;
+export default Editar2;
