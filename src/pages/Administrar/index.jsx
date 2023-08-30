@@ -33,6 +33,7 @@ function Administrar(){
           <Link to="/administrar/cadastrar" className='btnAdm'>Nova fruta</Link>
           <Link to="/" className='btnAdm'>Inicio</Link>
         </header>
+        
         <section className='sectionFruitsAdm'>
           <div className='listFruitsAdm'>
   
