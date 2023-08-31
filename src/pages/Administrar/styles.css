@@ -31,6 +31,7 @@ header{
     border-bottom: rgba(128, 0, 0, 0.145) 2px solid;
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
   }
 
   .descriptionFruitAdm{

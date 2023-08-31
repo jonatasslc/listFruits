@@ -24,7 +24,7 @@ function Cadastrar(){
 
         api.post(url, values)
             .then( () =>{
-                ;
+                navigate('/administrar');
             })
     }
 

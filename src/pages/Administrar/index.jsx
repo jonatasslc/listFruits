@@ -7,16 +7,6 @@ import { useNavigate, Link } from 'react-router-dom';
 function Administrar(){
     const[fruits, setFruits] = useState([]);
 
-    const [loading, setLoading] = useState(true);
-
-    function onDelete(id){
-      setLoading(false);
-
-      const url = `/fruits/${id}`;
-      api.delete(url)
-      .then ((response)=> {});
-    }
-
     useEffect( () => {
       const url = '/fruits';
           api.get(url)
